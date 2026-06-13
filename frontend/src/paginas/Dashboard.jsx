@@ -56,7 +56,7 @@ export default function Dashboard() {
         <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1 style={{ fontSize: '20px', fontWeight: '500', margin: 0 }}>Mis casos</h1>
           <button
-            onClick={() => navigate('/victimas/nuevo')}
+            onClick={() => navigate('/casos/nuevo')}
             style={{
               background: '#534AB7',
               color: '#fff',
@@ -128,7 +128,7 @@ export default function Dashboard() {
                     <td style={{ padding: '12px 16px', color: '#888' }}>{v.fecha_ingreso}</td>
                     <td style={{ padding: '12px 16px' }}>
                       <button
-                        onClick={() => navigate(`/victimas/${v.id}`)}
+                        onClick={() => navigate(`/casos/${v.id}`)}
                         style={{
                           background: 'transparent',
                           border: '0.5px solid #e0e0d8',
